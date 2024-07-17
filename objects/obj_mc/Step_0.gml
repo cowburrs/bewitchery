@@ -6,9 +6,20 @@
 	
 	//keypresses
 	move_wrap(true, true, 0)
-	if (keyboard_check_pressed(ord("S")) or keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("W")) or keyboard_check_pressed(ord("D"))) {
+	if ((keyboard_check_pressed(ord("S")) and !place_meeting(x, y + 27, obj_wall)) and can_move) {
 		key_presses++
 	}
+	if ((keyboard_check_pressed(ord("W")) and !place_meeting(x, y - 27, obj_wall)) and can_move) {
+		key_presses++
+	}
+	if ((keyboard_check_pressed(ord("A")) and !place_meeting(x - 27, y, obj_wall)) and can_move) {
+		key_presses++
+	}
+	if ((keyboard_check_pressed(ord("D")) and !place_meeting(x + 27, y, obj_wall)) and can_move) {
+		key_presses++
+	}
+	
+	//movement presses
 	if (keyboard_check_pressed(ord("A")) and can_move = true){
 		left_move = true
 	}
