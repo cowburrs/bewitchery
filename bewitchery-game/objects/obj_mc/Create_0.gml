@@ -1,0 +1,10 @@
+right_move = false
+left_move = false
+up_move = false
+down_move = false
+can_move = true
+sex = 0
+supersex = 0
+block_push = 0
+key_presses = 0
+supersexysex = 0
