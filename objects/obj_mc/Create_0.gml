@@ -8,3 +8,6 @@ supersex = 0
 block_push = 0
 key_presses = 0
 supersexysex = 0
+rewindx = 0;
+rewindy = 0;
+can_rewind = false

@@ -41,6 +41,7 @@
     {"id":{"name":"obj_mc","path":"objects/obj_mc/obj_mc.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
+    {"id":{"name":"level_two","path":"rooms/level_two/level_two.yy",},},
     {"id":{"name":"test_room","path":"rooms/test_room/test_room.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
     {"id":{"name":"spr_breakable","path":"sprites/spr_breakable/spr_breakable.yy",},},
@@ -53,6 +54,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
     {"roomId":{"name":"test_room","path":"rooms/test_room/test_room.yy",},},
+    {"roomId":{"name":"level_two","path":"rooms/level_two/level_two.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

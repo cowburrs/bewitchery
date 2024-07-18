@@ -21,6 +21,7 @@
     {"name":"obj_breakable","order":3,"path":"objects/obj_breakable/obj_breakable.yy",},
     {"name":"obj_finish","order":4,"path":"objects/obj_finish/obj_finish.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"level_two","order":2,"path":"rooms/level_two/level_two.yy",},
     {"name":"test_room","order":1,"path":"rooms/test_room/test_room.yy",},
     {"name":"spr_block","order":3,"path":"sprites/spr_block/spr_block.yy",},
     {"name":"spr_breakable","order":4,"path":"sprites/spr_breakable/spr_breakable.yy",},
