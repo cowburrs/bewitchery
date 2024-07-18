@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_restart, 1, x, y, 1920, 1080, 0, c_white, 1)

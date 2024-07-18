@@ -9,7 +9,7 @@
 		room_goto_next()
 	}
 	if (key_presses < 0 and !place_meeting(x, y, obj_wall)) {
-		room_restart()
+		instance_create_depth(x, y, -10, obj_restart)
 	}
 	
 	

@@ -22,6 +22,8 @@
     {"name":"obj_finish","order":4,"path":"objects/obj_finish/obj_finish.yy",},
     {"name":"obj_key","order":6,"path":"objects/obj_key/obj_key.yy",},
     {"name":"obj_lock","order":5,"path":"objects/obj_lock/obj_lock.yy",},
+    {"name":"obj_restart","order":8,"path":"objects/obj_restart/obj_restart.yy",},
+    {"name":"obj_start","order":7,"path":"objects/obj_start/obj_start.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"level_test","order":1,"path":"rooms/level_test/level_test.yy",},
     {"name":"level_three","order":4,"path":"rooms/level_three/level_three.yy",},
@@ -33,6 +35,7 @@
     {"name":"spr_key","order":6,"path":"sprites/spr_key/spr_key.yy",},
     {"name":"spr_lock","order":7,"path":"sprites/spr_lock/spr_lock.yy",},
     {"name":"spr_mc","order":1,"path":"sprites/spr_mc/spr_mc.yy",},
+    {"name":"spr_restart","order":8,"path":"sprites/spr_restart/spr_restart.yy",},
     {"name":"spr_wall","order":2,"path":"sprites/spr_wall/spr_wall.yy",},
   ],
 }

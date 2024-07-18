@@ -6,11 +6,12 @@ can_move = true
 sex = 0
 supersex = 0
 block_push = 0
-key_presses = 0
 supersexysex = 0
 rewindx = 0;
 rewindy = 0;
 can_rewind = false
+
+instance_create_depth(x, y, -10, obj_start)
 
 switch (room) {
 	case level_one:
