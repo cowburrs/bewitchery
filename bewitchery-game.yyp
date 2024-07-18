@@ -52,9 +52,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"level_two","path":"rooms/level_two/level_two.yy",},},
     {"roomId":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
     {"roomId":{"name":"test_room","path":"rooms/test_room/test_room.yy",},},
-    {"roomId":{"name":"level_two","path":"rooms/level_two/level_two.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
