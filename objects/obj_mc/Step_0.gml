@@ -1,31 +1,40 @@
 	if (left_move or right_move or up_move or down_move) {
 		can_move = false;
-		supersex+= 0.25;
-		sex+=0.25
+		supersex += 0.25;
+		sex += 0.25
 	}
+	
+	// room switching and restartiung
+	if (place_meeting(x, y, obj_finish) and key_presses > -1 and can_move) {
+		room_goto_next()
+	}
+	if (key_presses < 0 and !place_meeting(x, y, obj_wall)) {
+		room_restart()
+	}
+	
 	
 	//keypresses
 	move_wrap(true, true, 0)
 	if ((keyboard_check_pressed(ord("S")) and !place_meeting(x, y + 27, obj_wall)) and can_move) {
-		key_presses++
+		key_presses--
 		rewindx = x
 		rewindy = y
 		can_rewind = true
 	}
 	if ((keyboard_check_pressed(ord("W")) and !place_meeting(x, y - 27, obj_wall)) and can_move) {
-		key_presses++
+		key_presses--
 		rewindx = x
 		rewindy = y
 		can_rewind = true
 	}
 	if ((keyboard_check_pressed(ord("A")) and !place_meeting(x - 27, y, obj_wall)) and can_move) {
-		key_presses++
+		key_presses--
 		rewindx = x
 		rewindy = y
 		can_rewind = true
 	}
 	if ((keyboard_check_pressed(ord("D")) and !place_meeting(x + 27, y, obj_wall)) and can_move) {
-		key_presses++
+		key_presses--
 		rewindx = x
 		rewindy = y
 		can_rewind = true
@@ -99,6 +108,12 @@
 	if (keyboard_check_pressed(ord("2"))){
 		room_goto(level_two)
 	}
+	if (keyboard_check_pressed(ord("3"))){
+		room_goto(level_three)
+	}
+	if (keyboard_check_pressed(ord("0"))){
+		room_goto(level_test)
+	}
 	if (keyboard_check_pressed(vk_backspace) and can_rewind){
 		x = rewindx
 		y = rewindy
@@ -106,9 +121,14 @@
 		can_rewind = false
 	}
 	
+	
+	
+	
 	if (can_move = true) {
 		sex = 0;
 	}
-
+	
+if !(left_move or right_move or up_move or down_move) {
 	can_move = true
+}
 	

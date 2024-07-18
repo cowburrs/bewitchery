@@ -11,3 +11,17 @@ supersexysex = 0
 rewindx = 0;
 rewindy = 0;
 can_rewind = false
+
+switch (room) {
+	case level_one:
+	key_presses = 15
+	break;
+	case level_two:
+	key_presses = 22
+	break;
+	case level_three:
+	key_presses = 22
+	break;
+	default:
+    key_presses = 10;
+}
