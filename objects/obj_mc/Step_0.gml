@@ -111,6 +111,9 @@
 	if (keyboard_check_pressed(ord("3"))){
 		room_goto(level_three)
 	}
+	if (keyboard_check_pressed(ord("4"))){
+		room_goto(level_four)
+	}
 	if (keyboard_check_pressed(ord("0"))){
 		room_goto(level_test)
 	}
