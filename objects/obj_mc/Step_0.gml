@@ -54,6 +54,20 @@
 		down_move = true
 	}
 	
+	//fix to bug where you could move two directions
+	twomove = 0;
+	if (left_move = true) {twomove++}
+	if (right_move = true) {twomove++}
+	if (up_move = true) {twomove++}
+	if (down_move = true) {twomove++}
+	if (twomove > 1) {
+		left_move = 0
+		right_move = 0
+		up_move = 0
+		down_move = 0
+		key_presses += twomove
+	}
+	
 	//stop system
 	if (place_meeting(x + 27, y, obj_wall) and right_move = true){
 		block_push = instance_position(x + 108, y, obj_wall);
