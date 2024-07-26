@@ -24,7 +24,7 @@ switch (room) {
 	key_presses = 26
 	break;
 	case level_four:
-	key_presses = 21
+	key_presses = 19
 	break;
 	case level_tutorial:
 	key_presses = 17
