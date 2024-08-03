@@ -7,9 +7,9 @@ sex = 0
 supersex = 0
 block_push = 0
 supersexysex = 0
-rewindx = 0;
-rewindy = 0;
-can_rewind = false
+can_rewind = 0
+block_do = 0
+depth = -2;
 
 instance_create_depth(x, y, -10, obj_start)
 
@@ -21,7 +21,7 @@ switch (room) {
 	key_presses = 23
 	break;
 	case level_three:
-	key_presses = 26
+	key_presses = 25
 	break;
 	case level_four:
 	key_presses = 19

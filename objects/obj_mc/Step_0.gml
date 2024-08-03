@@ -17,27 +17,31 @@
 	move_wrap(true, true, 0)
 	if ((keyboard_check_pressed(ord("S")) and !place_meeting(x, y + 27, obj_wall)) and can_move) {
 		key_presses--
-		rewindx = x
-		rewindy = y
-		can_rewind = true
+		if (place_meeting(x, y, obj_stand)){
+			block_do = instance_position(x, y, obj_stand)
+			block_do.dothing ++;
+		}
 	}
 	if ((keyboard_check_pressed(ord("W")) and !place_meeting(x, y - 27, obj_wall)) and can_move) {
 		key_presses--
-		rewindx = x
-		rewindy = y
-		can_rewind = true
+		if (place_meeting(x, y, obj_stand)){
+			block_do = instance_position(x, y, obj_stand)
+			block_do.dothing ++;
+		}
 	}
 	if ((keyboard_check_pressed(ord("A")) and !place_meeting(x - 27, y, obj_wall)) and can_move) {
 		key_presses--
-		rewindx = x
-		rewindy = y
-		can_rewind = true
+		if (place_meeting(x, y, obj_stand)){
+			block_do = instance_position(x, y, obj_stand)
+			block_do.dothing ++;
+		}
 	}
 	if ((keyboard_check_pressed(ord("D")) and !place_meeting(x + 27, y, obj_wall)) and can_move) {
 		key_presses--
-		rewindx = x
-		rewindy = y
-		can_rewind = true
+		if (place_meeting(x, y, obj_stand)){
+			block_do = instance_position(x, y, obj_stand)
+			block_do.dothing ++;
+		}
 	}
 	
 	//movement presses
@@ -52,6 +56,15 @@
 	}
 	if (keyboard_check_pressed(ord("S")) and can_move = true){
 		down_move = true
+	}
+	
+	//spikes and stand stuff
+	if (place_meeting(x, y, obj_stand) and (can_move = false) and !place_empty(x, y, obj_stand)){
+		block_do = instance_nearest(x, y, obj_stand)
+		if (block_do.x = x and block_do.y = y)
+		{
+			block_do.dothing ++;
+		}
 	}
 	
 	//fix to bug where you could move two directions
@@ -112,7 +125,7 @@
 		y -= 27;
 	}
 	
-	//testing
+	//room switching
 	if (keyboard_check_pressed(ord("R"))){
 		room_restart()
 	}
@@ -128,14 +141,11 @@
 	if (keyboard_check_pressed(ord("4"))){
 		room_goto(level_four)
 	}
+	if (keyboard_check_pressed(ord("5"))){
+		room_goto(level_five)
+	}
 	if (keyboard_check_pressed(ord("0"))){
 		room_goto(level_test)
-	}
-	if (keyboard_check_pressed(vk_backspace) and can_rewind){
-		x = rewindx
-		y = rewindy
-		key_presses--
-		can_rewind = false
 	}
 	
 	
@@ -148,4 +158,3 @@
 if !(left_move or right_move or up_move or down_move) {
 	can_move = true
 }
-	
