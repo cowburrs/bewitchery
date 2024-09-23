@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"bewitchery-game",
   "resources":[
@@ -49,6 +49,8 @@
     {"id":{"name":"level_five","path":"rooms/level_five/level_five.yy",},},
     {"id":{"name":"level_four","path":"rooms/level_four/level_four.yy",},},
     {"id":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
+    {"id":{"name":"level_seven","path":"rooms/level_seven/level_seven.yy",},},
+    {"id":{"name":"level_six","path":"rooms/level_six/level_six.yy",},},
     {"id":{"name":"level_test","path":"rooms/level_test/level_test.yy",},},
     {"id":{"name":"level_three","path":"rooms/level_three/level_three.yy",},},
     {"id":{"name":"level_tutorial","path":"rooms/level_tutorial/level_tutorial.yy",},},
@@ -67,13 +69,15 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"level_five","path":"rooms/level_five/level_five.yy",},},
+    {"roomId":{"name":"level_seven","path":"rooms/level_seven/level_seven.yy",},},
     {"roomId":{"name":"level_tutorial","path":"rooms/level_tutorial/level_tutorial.yy",},},
     {"roomId":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
     {"roomId":{"name":"level_two","path":"rooms/level_two/level_two.yy",},},
     {"roomId":{"name":"level_three","path":"rooms/level_three/level_three.yy",},},
     {"roomId":{"name":"level_four","path":"rooms/level_four/level_four.yy",},},
+    {"roomId":{"name":"level_five","path":"rooms/level_five/level_five.yy",},},
     {"roomId":{"name":"level_test","path":"rooms/level_test/level_test.yy",},},
+    {"roomId":{"name":"level_six","path":"rooms/level_six/level_six.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

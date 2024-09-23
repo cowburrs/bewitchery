@@ -29,6 +29,8 @@
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"level_five","order":7,"path":"rooms/level_five/level_five.yy",},
     {"name":"level_four","order":5,"path":"rooms/level_four/level_four.yy",},
+    {"name":"level_seven","order":9,"path":"rooms/level_seven/level_seven.yy",},
+    {"name":"level_six","order":8,"path":"rooms/level_six/level_six.yy",},
     {"name":"level_test","order":1,"path":"rooms/level_test/level_test.yy",},
     {"name":"level_three","order":2,"path":"rooms/level_three/level_three.yy",},
     {"name":"level_tutorial","order":6,"path":"rooms/level_tutorial/level_tutorial.yy",},

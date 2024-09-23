@@ -144,6 +144,12 @@
 	if (keyboard_check_pressed(ord("5"))){
 		room_goto(level_five)
 	}
+	if (keyboard_check_pressed(ord("6"))){
+		room_goto(level_six)
+	}
+	if (keyboard_check_pressed(ord("7"))){
+		room_goto(level_seven)
+	}
 	if (keyboard_check_pressed(ord("0"))){
 		room_goto(level_test)
 	}
