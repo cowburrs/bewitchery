@@ -126,7 +126,7 @@
 	}
 	
 	//room switching
-	if (keyboard_check_pressed(ord("R"))){
+	/*if (keyboard_check_pressed(ord("R"))){
 		room_restart()
 	}
 	if (keyboard_check_pressed(ord("1"))){
@@ -152,7 +152,7 @@
 	}
 	if (keyboard_check_pressed(ord("0"))){
 		room_goto(level_test)
-	}
+	}*/
 	
 	
 	
