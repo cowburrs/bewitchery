@@ -69,7 +69,6 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"level_seven","path":"rooms/level_seven/level_seven.yy",},},
     {"roomId":{"name":"level_tutorial","path":"rooms/level_tutorial/level_tutorial.yy",},},
     {"roomId":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
     {"roomId":{"name":"level_two","path":"rooms/level_two/level_two.yy",},},
@@ -78,6 +77,7 @@
     {"roomId":{"name":"level_five","path":"rooms/level_five/level_five.yy",},},
     {"roomId":{"name":"level_test","path":"rooms/level_test/level_test.yy",},},
     {"roomId":{"name":"level_six","path":"rooms/level_six/level_six.yy",},},
+    {"roomId":{"name":"level_seven","path":"rooms/level_seven/level_seven.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
