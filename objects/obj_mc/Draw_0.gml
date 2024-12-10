@@ -8,4 +8,5 @@ if variable_instance_exists(self, "key_presses") {
 }
 //draw_self();
 //draw_text(room_width-200, room_height-200, buffer_move)
-//draw_text(room_width-100, room_height-300, string(can_move))
+draw_text(room_width-100, room_height-300, string(sex))
+draw_text(room_width-100, room_height-200, string(supersex))

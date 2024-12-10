@@ -19,7 +19,7 @@ instance_create_depth(x, y, -10, obj_start)
 
 switch (room) {
 	case level_one:
-	key_presses = 15
+	key_presses = 15;
 	break;
 	case level_two:
 	key_presses = 29;

@@ -1,6 +1,6 @@
  	if (left_move or right_move or up_move or down_move) {
 		can_move = false;
-		supersex += 0.25;
+		supersex += 0.25; //I think this is a variable test? smth like that, for debugging?
 		sex += 0.25
 	}
 	
@@ -46,7 +46,7 @@
 	
 	//movement presses
 	if (keyboard_check_pressed(ord("A")) and can_move = true){
-		left_move = true
+		left_move = true;
 	}
 	if (keyboard_check_pressed(ord("D")) and can_move = true){
 		right_move = true
@@ -111,20 +111,6 @@
 		}
 	}
 	
-	//fix to bug where you could move two directions
-	twomove = 0;
-	if (left_move = true) {twomove++}
-	if (right_move = true) {twomove++}
-	if (up_move = true) {twomove++}
-	if (down_move = true) {twomove++}
-	if (twomove > 1) {
-		left_move = 0
-		right_move = 0
-		up_move = 0
-		down_move = 0
-		key_presses += twomove
-	}
-	
 	//stop system
 	if (place_meeting(x + 27, y, obj_wall) and right_move = true){
 		block_push = instance_position(x + 108, y, obj_wall);
@@ -153,6 +139,20 @@
 			block_push.down_move = sex;
 		} 
 		down_move = false
+	}
+	
+		//fix to bug where you could move two directions
+	twomove = 0;
+	if (left_move = true) {twomove++}
+	if (right_move = true) {twomove++}
+	if (up_move = true) {twomove++}
+	if (down_move = true) {twomove++}
+	if (twomove > 1) {
+		left_move = 0
+		right_move = 0
+		up_move = 0
+		down_move = 0
+		key_presses += twomove
 	}
 	
 	//movement system
@@ -202,11 +202,12 @@
 	
 	
 	if (can_move = true) {
-		sex = 0;
+		sex = supersexysex;
 	}
 	
 if !(left_move or right_move or up_move or down_move) {
 	can_move = true
+	supersexysex = 0
 }
 
 //smoothness
