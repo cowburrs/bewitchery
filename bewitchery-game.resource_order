@@ -19,6 +19,7 @@
   "ResourceOrderSettings":[
     {"name":"obj_block","order":2,"path":"objects/obj_block/obj_block.yy",},
     {"name":"obj_breakable","order":3,"path":"objects/obj_breakable/obj_breakable.yy",},
+    {"name":"obj_broken","order":12,"path":"objects/obj_broken/obj_broken.yy",},
     {"name":"obj_finish","order":4,"path":"objects/obj_finish/obj_finish.yy",},
     {"name":"obj_key","order":6,"path":"objects/obj_key/obj_key.yy",},
     {"name":"obj_lock","order":5,"path":"objects/obj_lock/obj_lock.yy",},

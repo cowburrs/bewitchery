@@ -37,6 +37,7 @@
     {"id":{"name":"default_font","path":"fonts/default_font/default_font.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_breakable","path":"objects/obj_breakable/obj_breakable.yy",},},
+    {"id":{"name":"obj_broken","path":"objects/obj_broken/obj_broken.yy",},},
     {"id":{"name":"obj_finish","path":"objects/obj_finish/obj_finish.yy",},},
     {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},},
     {"id":{"name":"obj_lock","path":"objects/obj_lock/obj_lock.yy",},},

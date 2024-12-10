@@ -11,6 +11,8 @@ if (right_move > 0) {
 	}
 	if (place_meeting(x + 54, y, obj_wall)){
 		if (first_move) {
+			sex = instance_create_depth(x, y, 10, obj_broken)
+			sex.spindirection = -1;
 			instance_destroy()
 		}
 	}
@@ -23,6 +25,7 @@ if (left_move > 0) {
 	}
 	if (place_meeting(x - 54, y, obj_wall)){
 		if (first_move) {
+			instance_create_depth(x, y, 10, obj_broken)
 			instance_destroy()
 		}
 	}
@@ -35,7 +38,7 @@ if (up_move > 0) {
 	}
 	if (place_meeting(x, y - 54, obj_wall)){
 		if (first_move) {
-			//instance_create_layer() [Animation Shit]
+			instance_create_depth(x, y, 10, obj_broken)
 			instance_destroy()
 		}
 	}
@@ -48,6 +51,8 @@ if (down_move > 0) {
 	}
 	if (place_meeting(x, y + 54, obj_wall)){
 		if (first_move) {
+			sex = instance_create_depth(x, y, 10, obj_broken)
+			sex.spindirection = -1;
 			instance_destroy()
 		}
 	}

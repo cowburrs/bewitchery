@@ -1,0 +1,1 @@
+spindirection = 1
