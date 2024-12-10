@@ -35,6 +35,7 @@ if (up_move > 0) {
 	}
 	if (place_meeting(x, y - 54, obj_wall)){
 		if (first_move) {
+			//instance_create_layer() [Animation Shit]
 			instance_destroy()
 		}
 	}

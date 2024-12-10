@@ -43,3 +43,5 @@ if (down_move > 0) {
 	}
 	down_move--
 }
+fake_x = fake_x + 0.2*(x-fake_x);
+fake_y = fake_y + 0.2*(y-fake_y);

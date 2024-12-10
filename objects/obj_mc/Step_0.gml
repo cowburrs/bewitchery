@@ -1,4 +1,4 @@
-	if (left_move or right_move or up_move or down_move) {
+ 	if (left_move or right_move or up_move or down_move) {
 		can_move = false;
 		supersex += 0.25;
 		sex += 0.25
@@ -58,6 +58,50 @@
 		down_move = true
 	}
 	
+	//buffer moves
+	if (keyboard_check_pressed(ord("A")) and can_move = false){
+		buffer_move = "left"
+	}
+	if (keyboard_check_pressed(ord("D")) and can_move = false){
+		buffer_move = "right"
+	}
+	if (keyboard_check_pressed(ord("W")) and can_move = false){
+		buffer_move = "up"
+	}
+	if (keyboard_check_pressed(ord("S")) and can_move = false){
+		buffer_move = "down"
+	}
+	if ((buffer_move != "nothing") & (can_move=true)){
+		if (buffer_move = "left") {
+			buffer_move = "nothing";
+			if (!(place_meeting(x - 27, y, obj_wall)) & (right_move = false)) {
+				key_presses--;
+			}
+			left_move = true;
+		}
+		if (buffer_move = "right") {
+			buffer_move = "nothing";
+			if (!(place_meeting(x + 27, y, obj_wall)) & (right_move = false)) {
+				key_presses--;
+			}
+			right_move = true;
+		}
+		if (buffer_move = "up") {
+			buffer_move = "nothing";
+			if (!(place_meeting(x, y - 27, obj_wall)) & (up_move = false)) {
+				key_presses--;
+			}
+			up_move = true;
+		}
+		if (buffer_move = "down") {
+			buffer_move = "nothing";
+			if (!(place_meeting(x, y + 27, obj_wall)) & (down_move = false)) {
+				key_presses--;
+			}
+			down_move = true;
+		}
+	}
+	
 	//spikes and stand stuff
 	if (place_meeting(x, y, obj_stand) and (can_move = false) and !place_empty(x, y, obj_stand)){
 		block_do = instance_nearest(x, y, obj_stand)
@@ -85,7 +129,7 @@
 	if (place_meeting(x + 27, y, obj_wall) and right_move = true){
 		block_push = instance_position(x + 108, y, obj_wall);
 		if (!can_move and (block_push != noone) = true){
-			block_push.right_move = sex;
+			block_push.right_move = sex; //i did this sex thing as a joke but i literally don't know what it does xD
 		} 
 		right_move = false
 	}
@@ -111,7 +155,7 @@
 		down_move = false
 	}
 	
-	//more stop system
+	//movement system
 	if (left_move = true) {
 		x -= 27;
 	}
@@ -164,3 +208,7 @@
 if !(left_move or right_move or up_move or down_move) {
 	can_move = true
 }
+
+//smoothness
+fake_x = fake_x + smoothness*(x-fake_x);
+fake_y = fake_y + smoothness*(y-fake_y);

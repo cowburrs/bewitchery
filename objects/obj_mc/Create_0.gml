@@ -10,6 +10,10 @@ supersexysex = 0
 can_rewind = 0
 block_do = 0
 depth = -2;
+fake_x = x;
+fake_y = y;
+buffer_move = "nothing";
+smoothness = 0.5
 
 instance_create_depth(x, y, -10, obj_start)
 
@@ -18,7 +22,7 @@ switch (room) {
 	key_presses = 15
 	break;
 	case level_two:
-	key_presses = 23
+	key_presses = 29;
 	break;
 	case level_three:
 	key_presses = 25
@@ -35,7 +39,7 @@ switch (room) {
 	case level_seven:
 	key_presses = 99-62-3
 	break;
-	case level_tutorial:
+	case level_tutorial_1:
 	key_presses = 17
 	break;
 	default:

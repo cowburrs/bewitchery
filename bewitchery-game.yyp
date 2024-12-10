@@ -46,6 +46,7 @@
     {"id":{"name":"obj_stand","path":"objects/obj_stand/obj_stand.yy",},},
     {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"oResolution","path":"objects/oResolution/oResolution.yy",},},
     {"id":{"name":"level_five","path":"rooms/level_five/level_five.yy",},},
     {"id":{"name":"level_four","path":"rooms/level_four/level_four.yy",},},
     {"id":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
@@ -53,6 +54,7 @@
     {"id":{"name":"level_six","path":"rooms/level_six/level_six.yy",},},
     {"id":{"name":"level_test","path":"rooms/level_test/level_test.yy",},},
     {"id":{"name":"level_three","path":"rooms/level_three/level_three.yy",},},
+    {"id":{"name":"level_tutorial_1","path":"rooms/level_tutorial_1/level_tutorial_1.yy",},},
     {"id":{"name":"level_tutorial","path":"rooms/level_tutorial/level_tutorial.yy",},},
     {"id":{"name":"level_two","path":"rooms/level_two/level_two.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
@@ -70,6 +72,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"level_tutorial","path":"rooms/level_tutorial/level_tutorial.yy",},},
+    {"roomId":{"name":"level_tutorial_1","path":"rooms/level_tutorial_1/level_tutorial_1.yy",},},
     {"roomId":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
     {"roomId":{"name":"level_two","path":"rooms/level_two/level_two.yy",},},
     {"roomId":{"name":"level_three","path":"rooms/level_three/level_three.yy",},},
