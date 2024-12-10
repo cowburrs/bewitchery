@@ -78,6 +78,10 @@
 				key_presses--;
 			}
 			left_move = true;
+			if (place_meeting(x, y, obj_stand)){
+				block_do = instance_position(x, y, obj_stand)
+				block_do.dothing ++;
+			}
 		}
 		if (buffer_move = "right") {
 			buffer_move = "nothing";
@@ -85,6 +89,10 @@
 				key_presses--;
 			}
 			right_move = true;
+			if (place_meeting(x, y, obj_stand)){
+				block_do = instance_position(x, y, obj_stand)
+				block_do.dothing ++;
+			}
 		}
 		if (buffer_move = "up") {
 			buffer_move = "nothing";
@@ -92,6 +100,10 @@
 				key_presses--;
 			}
 			up_move = true;
+			if (place_meeting(x, y, obj_stand)){
+				block_do = instance_position(x, y, obj_stand)
+				block_do.dothing ++;
+			}
 		}
 		if (buffer_move = "down") {
 			buffer_move = "nothing";
@@ -99,6 +111,10 @@
 				key_presses--;
 			}
 			down_move = true;
+			if (place_meeting(x, y, obj_stand)){
+				block_do = instance_position(x, y, obj_stand)
+				block_do.dothing ++;
+			}
 		}
 	}
 	
