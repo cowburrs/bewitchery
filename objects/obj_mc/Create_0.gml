@@ -25,7 +25,7 @@ switch (room) {
 	key_presses = 29+3;
 	break;
 	case level_three:
-	key_presses = 25
+	key_presses = 26
 	break;
 	case level_four:
 	key_presses = 19
@@ -34,13 +34,16 @@ switch (room) {
 	key_presses = 99-84
 	break;
 	case level_six:
-	key_presses = 99-57-2-2-1+1
+	key_presses = 99-57-2-2-1+1+3+1+3+2+1+2+1
+	break;
+	case level_eight:
+	key_presses = 99-57-2-2-1+1+3+1+3-1+2
 	break;
 	case level_seven:
 	key_presses = 99-62-3+1+2+1
 	break;
 	case level_tutorial_1:
-	key_presses = 17
+	key_presses = 16
 	break;
 	default:
     key_presses = 99;

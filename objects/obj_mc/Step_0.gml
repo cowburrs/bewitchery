@@ -210,6 +210,9 @@
 	if (keyboard_check_pressed(ord("7"))){
 		room_goto(level_seven)
 	}
+	if (keyboard_check_pressed(ord("8"))){
+		room_goto(level_eight)
+	}
 	if (keyboard_check_pressed(ord("0"))){
 		room_goto(level_test)
 	}

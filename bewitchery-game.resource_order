@@ -29,6 +29,7 @@
     {"name":"obj_start","order":7,"path":"objects/obj_start/obj_start.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"oResolution","order":11,"path":"objects/oResolution/oResolution.yy",},
+    {"name":"level_eight","order":11,"path":"rooms/level_eight/level_eight.yy",},
     {"name":"level_five","order":7,"path":"rooms/level_five/level_five.yy",},
     {"name":"level_four","order":5,"path":"rooms/level_four/level_four.yy",},
     {"name":"level_seven","order":9,"path":"rooms/level_seven/level_seven.yy",},
