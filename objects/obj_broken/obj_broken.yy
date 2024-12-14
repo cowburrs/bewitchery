@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_breakable",
-    "path":"sprites/spr_breakable/spr_breakable.yy",
+    "name":"spr_breakable_small",
+    "path":"sprites/spr_breakable_small/spr_breakable_small.yy",
   },
   "spriteMaskId":null,
   "visible":true,
